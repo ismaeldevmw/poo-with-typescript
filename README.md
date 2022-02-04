@@ -1,15 +1,35 @@
-#Programación Orientada a Objetos con TypeScript
+# Programación Orientada a Objetos con TypeScript
 
+<a name="general-info"></a>
+## Table of Contents
+1. [Iniciando un proyecto TypeScript](#01)
+2. [Ejecución de ts-node](#02)
+3. [Variables con tipos de dato](#03)
+4. [Funciones con tipos de dato](#04)
+5. [Clases y Objetos](#05)
+6. [Constructores](#06)
+7. [Modificadores de acceso](#07)
+8. [Herencia](#08)
+9. [Sobreescritura de métodos](#09)
+10. [Types](#10)
+11. [Modificador readonly](#11)
+12. [Intersección de types](#12)
+13. [Interfaces](#13)
+14. [Accessors](#14)
+
+<a name="01"></a>
 ## Iniciando un proyecto TypeScript
 ``` shell
   npm init --yes
   npm i -D typescript ts-node
 ```
+<a name="02"></a>
 ## Ejecución de ts-node
 En la termnal ejecuta el siguiente comando
 ``` shell
   npx ts-node index.ts
 ```
+<a name="03"></a>
 ## Variables con tipos de dato
 ``` typescript
   let message: string;
@@ -20,6 +40,7 @@ En la termnal ejecuta el siguiente comando
 
   let is: boolean = true;
 ```
+<a name="04"></a>
 ## Funciones con tipos de dato
 ``` typescript
   function sum(a: number, b: number): number {
@@ -29,6 +50,7 @@ En la termnal ejecuta el siguiente comando
   const result: number = sum(2, 5);
   console.log(result);
 ```
+<a name="05"></a>
 ## Clases y Objetos
 ``` typescript
   class Sale {
@@ -44,6 +66,7 @@ En la termnal ejecuta el siguiente comando
   const res = sale.getTotal();
   console.log(res);
 ```
+<a name="06"></a>
 ## Constructores
 ``` typescript
   class Sale {
@@ -64,7 +87,7 @@ En la termnal ejecuta el siguiente comando
   const res = sale.getTotal();
   console.log(res);
 ```
-
+<a name="07"></a>
 ## Modificadores de acceso
 ``` typescript
   class Sale {
@@ -84,6 +107,7 @@ En la termnal ejecuta el siguiente comando
   const res = sale.getTotal();
   console.log(res);
 ```
+<a name="08"></a>
 ## Herencia
 ``` typescript
   class Sale {
@@ -116,6 +140,7 @@ En la termnal ejecuta el siguiente comando
   const res2 = saleWithTaxes.getTotal();
   console.log(res2);
 ```
+<a name="09"></a>
 ## Sobreescritura de métodos
 ``` typescript
   class Sale {
@@ -149,7 +174,7 @@ En la termnal ejecuta el siguiente comando
   const res2 = saleWithTaxes.getTotal();
   console.log(res2);
 ```
-
+<a name="10"></a>
 ## Types
 ``` typescript
   type Beer = {
@@ -171,6 +196,7 @@ En la termnal ejecuta el siguiente comando
   myBeer.name = 'Delirium';
   show(myBeer);
 ```
+<a name="11"></a>
 ## Modificador readonly
 ``` typescript
   type Beer = {
@@ -192,6 +218,7 @@ En la termnal ejecuta el siguiente comando
   myBeer.name = 'Delirium'; // readonly
   show(myBeer);
 ```
+<a name="12"></a>
 ## Intersección de types
 ``` typescript
   type Beer = {
@@ -215,6 +242,7 @@ En la termnal ejecuta el siguiente comando
 
   console.info(combo);
 ```
+<a name="13"></a>
 ## Interfaces
 ``` typescript
   interface Drink {
@@ -277,6 +305,7 @@ En la termnal ejecuta el siguiente comando
 
   showDrinks(ad);
 ```
+<a name="14"></a>
 ## Accessors
 ``` typescript 
   class Account {
