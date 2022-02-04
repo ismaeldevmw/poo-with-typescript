@@ -25,9 +25,22 @@
 ```
 <a name="02"></a>
 ## Ejecución de ts-node
-En la termnal ejecuta el siguiente comando
+En la termnal ejecuta el siguiente comando.
 ``` shell
   npx ts-node index.ts
+```
+Si desea ver el código JavaScript compilado puede ejecutar el comando.
+``` shell
+  npx tsc && node dist/index.js
+```
+Esto es posible ya que creamos previamente el archivo de configuración **tsconfig.json**
+
+Puede también ejecutar los comandos rápidos configurados en el **package.json**
+``` shell
+  npm start
+```
+``` shell
+  npm run ts
 ```
 <a name="03"></a>
 ## Variables con tipos de dato
